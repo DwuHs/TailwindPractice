@@ -23,13 +23,13 @@ const app = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 inline-block text-transparent bg-clip-text">
             FAQ Center
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto dark:text-gray-300">
             Find answers to the most common questions about Tailwind CSS and Web
             Development.
           </p>
         </header>
       </div>
-      <FAQlist toggleDarkMode={toggleDarkMode} />
+      <FAQlist toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
     </div>
   );
 };

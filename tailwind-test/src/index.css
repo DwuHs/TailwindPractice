@@ -4,4 +4,13 @@
   font-family: "Prompt", sans-serif;
 }
 
-@custom-variant dark(&:where(.dark, .dark *));
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
